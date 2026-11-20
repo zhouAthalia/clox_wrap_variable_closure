@@ -1,0 +1,6 @@
+//ch25 q2
+var total = 0;
+for (var i = 0; i < 5000000; i = i + 1) {
+  total = total + i;
+}
+print total;

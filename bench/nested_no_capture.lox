@@ -1,0 +1,13 @@
+//ch25 q1
+fun run() {
+  var sum = 0;
+  for (var j = 0; j < 1000000; j = j + 1) {
+    fun add(a, b) {
+      return a + b;
+    }
+    sum = add(sum, j);
+  }
+  return sum;
+}
+
+print run();

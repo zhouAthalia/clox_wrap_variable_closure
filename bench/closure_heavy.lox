@@ -1,0 +1,18 @@
+//ch25 q1
+for (var i = 0; i < 3; i = i + 1) {
+  var start = clock();
+  var sum = 0;
+  for (var j = 0; j < 300000; j = j + 1) {
+    fun outer(a, b, c) {
+      fun inner() {
+        return a + b + c;
+      }
+      return inner;
+    }
+
+    var closure = outer(j, j, j);
+    sum = sum + closure();
+  }
+
+  print sum;
+}
